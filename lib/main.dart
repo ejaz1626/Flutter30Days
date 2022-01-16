@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter30days/pages/home_page.dart';
 import 'package:flutter30days/pages/login_page.dart';
+import 'package:flutter30days/utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
       // home: const HomePage(),
       initialRoute: "/login",
       routes: {
-        "/": (context) => const HomePage(),
-        "/homepage": (context) => const HomePage(),
-        "/login": (context) => const LoginPage(),
+        "/": (context) => const LoginPage(),
+        MyRoutes.homeRoute: (context) => const HomePage(), // "/homepage"
+        MyRoutes.loginRoute: (context) => const LoginPage(), //"/login"
       },
     );
   }
