@@ -7,10 +7,11 @@ class Item {
   final num price;
 
   Item(
-      {this.id,
-      this.name,
-      this.description,
-      this.color,
-      this.image,
-      this.price});
+      //use curly braces to make it named constructor
+      {required this.id,
+      required this.name,
+      required this.description,
+      required this.color,
+      required this.image,
+      required this.price});
 }
